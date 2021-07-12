@@ -1,0 +1,8 @@
+{
+	"data_sources": {
+		"folders_with_json_files": {
+			"product_invoices": "../data/product_invoices",
+            "product_package_types": "../data/product_package_types"
+		}
+	}
+}
