@@ -34,12 +34,10 @@ class Extractor(object):
         # print(df.head(10))
         return df
 
-# function to add file
-# running metrics continuously 
-
+# function to add file to allow running metrics continuously
 
 if __name__ == '__main__':
     datasources = json.load(open('config/data_source_config.json'))
-    path = '../data/product_package_types/' #562886shipments 562886 554038invoices 134packageTypes 562943providerInvoices
+    path = '../data/product_package_types/'
     extractor = Extractor(datasources)
     extractor.load_json_files_to_df(path)
