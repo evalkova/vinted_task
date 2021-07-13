@@ -4,6 +4,7 @@ import math
 
 # logging.getLogger().setLevel(logging.INFO)
 
+
 class Transformer(object):
 
     def __init__(self):
@@ -13,11 +14,11 @@ class Transformer(object):
         try:
             isTransIdUnique = df[id].is_unique
             logging.info(id + " is Unique: " + str(isTransIdUnique) + '\n')
-            return True
         except (KeyError, NameError, TypeError, AttributeError):
             logging.error('Could not perform check for the provided df '
                           'object and id ' + str(id) +'. Please provide different values')
-        return False
+            return
+        return isTransIdUnique
 
     # The function needs to be improved to return booleans so it is more usable.
     def check_missing_values(self, df):
