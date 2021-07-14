@@ -2,8 +2,6 @@ import pandas as pd
 import numpy as np
 import glob, os, json, logging
 
-# logging.getLogger().setLevel(logging.INFO)
-
 
 class Extractor(object):
 

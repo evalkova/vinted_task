@@ -2,7 +2,7 @@ import logging
 import re
 import math
 
-# logging.getLogger().setLevel(logging.INFO)
+logging.getLogger().setLevel(logging.INFO)
 
 
 class Transformer(object):
